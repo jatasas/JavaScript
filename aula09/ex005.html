@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passo com o DOM</title>
+    <style>
+        body {
+            background-color: rgb(72, 72, 217);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong>  em javascript.</p>
+    <div id="msg">clique aqui</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.documente.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        //nao esta funcionando n sei pq
+        document.write(p1.innerText)
+        d.style.background = 'green'
+        window.document.getElementsById('msg').innerText = 'estou aguardando...'
+    </script>
+</body>
+</html>
